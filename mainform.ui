@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainForm</class>
+ <widget class="QWidget" name="MainForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1068</width>
+    <height>665</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Программа для учёта заказов</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>731</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>200</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderCascadingSectionResizes">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderDefaultSectionSize">
+    <number>60</number>
+   </attribute>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Таблица с заказами</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="admin_groupBox_1">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>580</y>
+     <width>521</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>  Для использования данной кнопки, для начала выберите индет. заказа </string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+   <widget class="QPushButton" name="showInformation_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>501</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Показать дополнительную информацию по заказу</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>60</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Добавить новый заказ</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>270</y>
+     <width>291</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Поиск заказа по полям   </string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>59</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>По ID:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="orderID_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="findByID_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>50</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Найти</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="fullName_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="findByFullName_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>100</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Найти</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>По ФИО:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="date_lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>141</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>По дате оформления:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="findByFullName_pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>150</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Найти</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="showOrders_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>590</y>
+     <width>201</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Отобразить все заказы</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="admin_groupBox">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>470</y>
+     <width>291</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Операции управляющего</string>
+   </property>
+   <widget class="QPushButton" name="utverditi_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Утвердить заказ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="deleteObject_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>80</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Удалить заказ</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Изменить заказ</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="exit_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>261</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Завершить сессию</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="showAutomobiles_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>110</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Просмотреть доступные автомобили</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="showDetails_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>160</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Просмотреть доступные детали на складе</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="showServices_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>210</y>
+     <width>291</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Просмотреть доступные услуги</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
